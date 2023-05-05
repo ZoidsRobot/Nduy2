@@ -25,7 +25,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "907544310"))
 OWNER = os.environ.get("OWNER","Eror_404_NF")
 
 # Databasenya 
-DB_URI = os.environ.get("DATABASE_URL", "")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://tuhzkbnv:eptRD7vW-OA-WV2FC2qE17Kq_WH4KIqe@raja.db.elephantsql.com/tuhzkbnv")
 
 # Username CH & Group
 CHANNEL = os.environ.get("CHANNEL", "vvslh_pro")
@@ -44,7 +44,7 @@ START_MSG = os.environ.get(
     "<b>Hello {first}</b>\n\n<b>Saya dapat menyimpan file pribadi di Channel Tertentu dan pengguna lain dapat mengaksesnya dari link khusus.</b>",
 )
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "5420934174").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "5420934174 5347206863 5722443726").split())]
 except ValueError:
     raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
 
